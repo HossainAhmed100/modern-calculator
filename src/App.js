@@ -45,6 +45,12 @@ function App() {
       if(lastChr === ".") return;
 
       setExpression(expression + key);
+      const tempHistory = [...history];
+      if(tempHistory.indexOf(expression + "") !== -1){
+        if(tempHistory.at(-1) === (expression + "")) return;
+      }
+      tempHistory.push(expression);
+      setHistory(tempHistory)
       if(result){
         setExpression(result + key)
       }
