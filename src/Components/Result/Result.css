@@ -1,0 +1,22 @@
+.result{
+    flex: 0.3;
+    padding: 10px 20px;
+    text-align: right;
+    background-color: var(--bg-color-1);
+}
+
+
+.result p {
+    color: var(--text-color-1);
+}
+
+
+.sub_result{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.main_result{
+    font-weight: bold;
+    font-size: 1.875rem;
+}
+
